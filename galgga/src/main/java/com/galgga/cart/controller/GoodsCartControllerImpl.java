@@ -91,7 +91,7 @@ public class GoodsCartControllerImpl extends BaseController implements GoodsCart
 		goodsCartVO.setM_id(m_id);
 		goodsCartVO.setCart_goods_qty(cart_goods_qty);
 		boolean result=goodsCartService.modifyCartQty(goodsCartVO);
-		
+		//내일고기먹어
 		if(result==true){
 		   return "modify_success";
 		}else{
