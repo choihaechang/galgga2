@@ -50,7 +50,7 @@ public class GoodsCartControllerImpl extends BaseController implements GoodsCart
 		pageMaker.setTotalCount(goodsCartService.myCartListCount());
 		List<Criteria> cartList = goodsCartService.myCartList(cri);
 		List<GoodsImgFileVO> goodsImgList = goodsCartService.selectGoodsList(m_id);
-		
+		//내일 한시에끝나
 		mav.addObject("goodsImgList", goodsImgList);
 		mav.addObject("cartList", cartList);
 		mav.addObject("pageMaker", pageMaker);
